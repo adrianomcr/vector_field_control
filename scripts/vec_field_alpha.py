@@ -254,6 +254,8 @@ def load_parameters():
         cx = float(rospy.get_param("/vector_field/cx"))
         cy = float(rospy.get_param("/vector_field/cy"))
         gamma = float(rospy.get_param("/vector_field/gamma"))
+        if(gamma%2.0 != 0):
+            print " \33[41mParameter 'gamma' must be an even integer \33[0m"
         invert_direction = bool(rospy.get_param("/vector_field/invert_direction"))
         invert_motion_flag = rospy.get_param("/vector_field/invert_motion_flag")
         pose_topic_name = rospy.get_param("/vector_field/pose_topic_name")

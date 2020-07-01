@@ -19,7 +19,7 @@ a: 4.0 #stretching on x axis
 b: 3.0 #Stretching on y axis
 cx: 6.0 #center x
 cy: 6.0 #center y
-gamma: 4.0 #shape of curve
+gamma: 4 #shape of curve (should be an even integer)
 
 # Parameter to invert the direction that the curve is being circulated
 invert_direction: False

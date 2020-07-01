@@ -40,7 +40,7 @@ The list of parameters is on the file inside the `config` folder in the file `co
 - `b` (`float`): Stretching of the curve on y axis
 - `cx` (`float`): Center of the curve on x axis
 - `cy` (`float`): Center of the curve on y axis
-- `gamma` (`float`): Parameter of the curve's shape
+- `gamma` (`int`): Parameter of the curve's shape. Should be an even integer
 - `invert_direction` (`bool`): Flag to invert the sense of the curve's circulation
 - `invert_motion_flag` (`bool`): Flag to invert the motion of the espeleorobo (move backwards);
 - `pose_topic_name` (`string`): Name of the topic in which the pose will be obtained;
