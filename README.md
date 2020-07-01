@@ -14,7 +14,10 @@ $ git clone https://github.com/adrianomcr/vector_field_control.git
 
 The node `vec_field_alpha.py` is used to control the robot to follow a path represented as the zero level set of a function alpha. It requires the global pose of the robot. The current alpha function implemented is:
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\alpha(x,y)=\left(\left(\frac{x-c_x}{a}\right)^\gamma  + \left(\frac{y-c_y}{b}\right)^\gamma \right)^{\frac{1}{\gamma}} - 1" />
+<!-- <img src="https://latex.codecogs.com/svg.latex?\Large&space;\alpha(x,y)=\left(\left(\frac{x-c_x}{a}\right)^\gamma+\left(\frac{y-c_y}{b}\right)^\gamma\right)^{\frac{1}{\gamma}}-1" /> -->
+
+![formula](https://render.githubusercontent.com/render/math?math=\alpha(x,y)=\left(\left(\frac{x-c_x}{a}\right)^\gamma+\left(\frac{y-c_y}{b}\right)^\gamma\right)^{\frac{1}{\gamma}}-1)
+
 
 ### Topics
 
