@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<launch>
+
+	<!-- Run the node that controls the robot with vector fields -->
+	<node pkg = "vector_field_control" name = "vector_field" type = "vec_field_alpha.py" args="" output="screen">
+		<rosparam command="load" file="$(find vector_field_control)/config/control_params.yaml" />
+	</node>
+
+
+	<!-- Run rviz for visualization -->
+	<node pkg = "rviz" name = "rviz" type = "rviz" args="-d $(find vector_field_control)/rviz/config.rviz" output="screen">
+	</node>
+
+
+
+</launch>

@@ -1,0 +1,48 @@
+
+#Parameters for the vector_field_control package
+
+
+
+# Feedback linearization ----------  ----------  ----------
+
+# Distance the control point is moved forward from the robots center
+d_feedback: 0.2
+
+
+
+# Curve's parameters ----------  ----------  ----------
+
+#alpha = (((x-cx)/a)**(gamma) + ((y-cy)/b)**(gamma))**(1.0/gamma) - 1
+
+# Size and shape parameters
+a: 4.0 #stretching on x axis
+b: 3.0 #Stretching on y axis
+cx: 6.0 #center x
+cy: 6.0 #center y
+gamma: 4.0 #shape of curve
+
+# Parameter to invert the direction that the curve is being circulated
+invert_direction: False
+
+
+# Vector field ----------  ----------  ----------
+
+#Flag to invert the motion of the robot (move backwards)
+invert_motion_flag: False
+
+#Name of the topic in which the pose will be obtained
+pose_topic_name: /turtle1/pose
+#Type of the topic in which the pose will be obtained (options below)
+# TFMessage
+# Pose
+# Odometry
+pose_topic_type: PoseTurtle
+
+#Name of the topic in which the forward and angular velocities will be published
+cmd_vel_topic_name: /turtle1/cmd_vel
+
+
+# Convergence gain of the vector field
+K_F: 5.0
+# Reference forward speed for the robot
+vd: 1.0
