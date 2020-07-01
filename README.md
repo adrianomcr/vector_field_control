@@ -75,7 +75,7 @@ $ roslaunch vector_field_control vector_field.launch
 
 If everything is ok you should see the following result:
 
-![image](https://github.com/adrianomcr/vector_field_control/images/turtle.png)
+![image](https://github.com/adrianomcr/vector_field_control/blob/master/images/turtle.png)
 
 ## Contact:
 
